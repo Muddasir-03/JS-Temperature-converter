@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lightgreen;
+    padding: 50px 70px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1{
+    text-align: center;
+    margin-bottom: 5%;
+    width: 100%;
+}
+#container{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-div{
+    /* display: inline-block; */
+}
+.inp{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+}
+label{
+    font-size: 22px;
+}
+
+/* ----------------------Responsive----------------- */
+
+@media(max-width:800px){
+.input-div{
+    margin-bottom: 5%;
+}
+h1{
+    margin-bottom: 10%;
+}
+}
+@media(max-width:650px){
+#container{
+    flex-direction: column;
+}
+}
+#container{
+    margin-top: 15%;
+}
+@media(max-width:550px){
+    h1{
+      font-size:  25px;
+    }
+}
+
+@media(max-width:500px){
+.inp{
+    font-size: 25px;
+}
+#container{
+    margin-top: 20%;
+}
+}
+
+@media(max-width:450px){
+  h1{
+    font-size: 20px;
+  }
+}
+@media(max-width:400px){
+  h1{
+    font-size: 17px;
+  }
+  body{
+    padding: 50px 50px;
+  }
+}
+@media(max-width:350px){
+    body{
+    padding: 40px 40px;
+  } 
+}
+@media(max-width:300px){
+    body{
+    padding: 30px 30px;
+  } 
+}
